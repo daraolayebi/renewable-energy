@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: normal;
+    src: url('/fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 500;
+    src: url('/fonts/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-weight: 500;
+    src: url('/fonts/HelveticaNeue-Medium.ttf');
+}
+
+
+body{
+    font-family: 'IBMPlexSans';
+    font-weight: normal;
+    color: black;
+    /* overflow: hidden; */
+}
+
+#nav{
+    // width: 100%;
+    height: 100px;
+    padding-left: 128px;
+    padding-top: 20px;
+    padding-right: 60px;
+    color: white;
+    height: 64px;
+    background-color: #65aa4f;
+    // border: solid 1px #979797;
+}
+
+.text-congrats{
+    margin-top: 174px;
+    text-align: center;
+    color: #757575;
+    font-size: 30px;
+}
+
+.text-small{
+    margin-top: 7px;
+    text-align: center;
+    color: #757575;
+    font-size: 14px;
+}
+
+.grey-box{
+    height: 250px;
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 68px;
+    background-color: #d8d8d8;
+}
+
+.buttons-section{
+    height: 50px;
+    width: 14%;
+    margin: 0 auto;
+    // background: black;
+    margin-top: 60px;
+    // padding-left: 1.2%;
+    color: #313131;
+    font-size: 14px;
+    margin-bottom: 100px;
+
+    .left-button{
+        float: left;
+        width: 101px;
+        height: 31px;
+        border-radius: 3px;
+        background-color: #e4e4e4;
+        border: solid 1px #d6d6d6;
+    }
+
+    .right-button{
+        float: right;
+        width: 101px;
+        height: 31px;
+        border-radius: 3px;
+        background-color: #e4e4e4;
+        border: solid 1px #d6d6d6;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1600px){
+    .grey-box{
+        width: 18%;
+    }
+
+    .buttons-section{
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .grey-box{
+        width: 20%;
+    }
+
+    .buttons-section{
+        width: 19%;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    #nav{
+        padding-left: 70px;
+        padding-right: 60px;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+    .grey-box{
+        width: 25%;
+    }
+
+    .buttons-section{
+        width: 24%;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .grey-box{
+        width: 30%;
+    }
+
+    .buttons-section{
+        width: 29%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .grey-box{
+        width: 35%;
+    }
+
+    .buttons-section{
+        width: 34%;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .grey-box{
+        width: 40%;
+    }
+
+    .buttons-section{
+        width: 39%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .grey-box{
+        width: 50%;
+    }
+
+    .buttons-section{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 520px){
+
+    #nav{
+        padding-left: 30px;
+        padding-right: 60px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .grey-box{
+        width: 70%;
+    }
+
+    .buttons-section{
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .grey-box{
+        width: 90%;
+    }
+
+    .buttons-section{
+        width: 88%;
+    }
+}
+
+
+
+

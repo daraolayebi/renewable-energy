@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: normal;
+  src: url("/fonts/IBMPlexSans-Regular.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: 500;
+  src: url("/fonts/IBMPlexSans-Medium.ttf"); }
+@font-face {
+  font-family: 'HelveticaNeue';
+  font-weight: 500;
+  src: url("/fonts/HelveticaNeue-Medium.ttf"); }
+body {
+  font-family: 'IBMPlexSans';
+  font-weight: normal;
+  color: black;
+  /* overflow: hidden; */ }
+
+button:focus {
+  outline: none; }
+
+#hero-section {
+  height: 700px; }
+  #hero-section .hero-image {
+    height: 700px; }
+
+.hero-small-text {
+  margin-top: 21px;
+  display: inline-block;
+  font-size: 30px;
+  padding-left: 0px;
+  margin-bottom: 60px; }
+
+#section-solution-providers {
+  padding-top: 171px; }
+  #section-solution-providers .vendor-count {
+    text-align: center;
+    color: #292929;
+    font-size: 16px;
+    margin-bottom: 51px; }
+  #section-solution-providers .vendor-view-count {
+    color: #292929;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 26px; }
+  #section-solution-providers .button-show-more {
+    height: 47px;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 500;
+    border: solid 1px #36434b;
+    background: none;
+    margin-bottom: 250px; }
+  #section-solution-providers .vendor-box {
+    height: 400px;
+    margin-bottom: 40px; }
+    #section-solution-providers .vendor-box .vendor-details {
+      height: 400px;
+      width: 95%;
+      margin: 0 auto; }
+      #section-solution-providers .vendor-box .vendor-details .vendor-img {
+        height: 245px;
+        width: 307px;
+        width: 95%;
+        margin: 0 auto;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 15px; }
+      #section-solution-providers .vendor-box .vendor-details .vendor-name {
+        color: #1f1f1f;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 14px; }
+      #section-solution-providers .vendor-box .vendor-details .vendor-location-contact {
+        color: #53585d;
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        margin-bottom: 10px; }
+
+@media screen and (max-width: 520px) {
+  .hero-small-text {
+    font-size: 22px;
+    margin-bottom: 50px; }
+
+  .vendor-box .vendor-details {
+    width: 100%; }
+    .vendor-box .vendor-details .vendor-img {
+      width: 100%; } }
+
+/*# sourceMappingURL=solution-providers.css.map */

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Renewable Energy</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <link rel="stylesheet" type="text/css" href="css/solution-providers.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+   <div id = "overlay">
+    <div class="overlay-content">
+      <a href="#/" onclick="">Energy Calculator</a>
+      <br>
+      <a href="#/" onclick="goToSection('blog')">Blog</a>
+      <br>
+      <a href="#/" onclick="goToSection(8)">Solution Provider</a>
+      <br>
+      <a href="#/" onclick="goToSection('login')">Login</a>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <section id ="hero-section" >
+      <img src="img/main-bg.jpg" alt="hero-image" class="row hero-image">
+      <div id="nav" class="row">
+        <div class="nav-left col-sm-12" onclick="goToSection('home')"><span>Imperium</span></div>
+        <div class="nav-right col-sm-12">
+          <span class="hidden-xs">Energy Calculator</span>
+          <span class="hidden-xs" onclick="goToSection('blog')">Blog</span>
+          <span class="hidden-xs">Solution Provider</span>
+          <span class="hidden-xs" onclick="goToSection('login')">Sign-Up</span>
+          <div id="menu-icon" class="hidden-sm hidden-md hidden-lg" onclick="menuIconClick(this)">
+              <div id="bar1"></div>
+              <div id="bar2"></div>
+              <div id="bar3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row hero-left-margin">
+        <div class="col-md-6 col-md-offset-2 col-sm-offset-1 hero-big-text">Find a solution provider<br><span class="hero-small-text col-lg-8 col-sm-12">We are empowering local businesses in the renewble energy sector.</span></div>
+        <div class="col-xs-11 col-sm-8 col-md-offset-2 col-sm-offset-1  search-box">
+          <div class="ic-search col-xs-1"><i class="fa fa-search"></i></div>
+          <input type="text" name="" placeholder="Try “Find a Solution Provider”" class="col-sm-8 col-xs-11 search-text-field">
+        </div>
+      </div>
+      <!-- <div class="hero-big-text row col-sm-12">Saving our planet,<br>one household at a time</div> -->
+    </section>
+    <section id="section-solution-providers">
+      <div class="col-sm-12 vendor-count">Vendors: 1-50 0F 1000</div>
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-sm-4 vendor-box">
+          <div class="vendor-details">
+              <img src="img/main-bg.jpg" alt="vendor-image" class="row col-sm-12 vendor-img">
+              <div class="col-sm-12 vendor-name">Anergy Nigeria Limited</div>
+              <div class="col-sm-12 vendor-location-contact">Badagry, Lagos.</div>
+              <div class="col-sm-12 vendor-location-contact">www.anergy.com +234-9575775</div>
+          </div>
+        </div>   
+         <div class="col-sm-4 vendor-box">
+          <div class="vendor-details">
+              <img src="img/main-bg.jpg" alt="vendor-image" class="row col-sm-12 vendor-img">
+              <div class="col-sm-12 vendor-name">Anergy Nigeria Limited</div>
+              <div class="col-sm-12 vendor-location-contact">Badagry, Lagos.</div>
+              <div class="col-sm-12 vendor-location-contact">www.anergy.com +234-9575775</div>
+          </div>
+        </div>   
+         <div class="col-sm-4 vendor-box">
+          <div class="vendor-details">
+              <img src="img/main-bg.jpg" alt="vendor-image" class="row col-sm-12 vendor-img">
+              <div class="col-sm-12 vendor-name">Anergy Nigeria Limited</div>
+              <div class="col-sm-12 vendor-location-contact">Badagry, Lagos.</div>
+              <div class="col-sm-12 vendor-location-contact">www.anergy.com +234-9575775</div>
+          </div>
+        </div>
+        <div class="col-sm-4 vendor-box">
+          <div class="vendor-details">
+              <img src="img/main-bg.jpg" alt="vendor-image" class="row col-sm-12 vendor-img">
+              <div class="col-sm-12 vendor-name">Anergy Nigeria Limited</div>
+              <div class="col-sm-12 vendor-location-contact">Badagry, Lagos.</div>
+              <div class="col-sm-12 vendor-location-contact">www.anergy.com +234-9575775</div>
+          </div>
+        </div> 
+         <div class="col-sm-4 vendor-box">
+          <div class="vendor-details">
+              <img src="img/main-bg.jpg" alt="vendor-image" class="row col-sm-12 vendor-img">
+              <div class="col-sm-12 vendor-name">Anergy Nigeria Limited</div>
+              <div class="col-sm-12 vendor-location-contact">Badagry, Lagos.</div>
+              <div class="col-sm-12 vendor-location-contact">www.anergy.com +234-9575775</div>
+          </div>
+        </div> 
+         <div class="col-sm-4 vendor-box">
+          <div class="vendor-details">
+              <img src="img/main-bg.jpg" alt="vendor-image" class="row col-sm-12 vendor-img">
+              <div class="col-sm-12 vendor-name">Anergy Nigeria Limited</div>
+              <div class="col-sm-12 vendor-location-contact">Badagry, Lagos.</div>
+              <div class="col-sm-12 vendor-location-contact">www.anergy.com +234-9575775</div>
+          </div>
+        </div>         
+      </div>
+      <div class="col-sm-12 vendor-view-count">You’ve viewed 100 0f 200 Vendors</div>
+      <button class="button-show-more col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4">SHOW MORE</button>
+    </section>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

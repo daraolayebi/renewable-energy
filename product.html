@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Renewable Energy</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <link rel="stylesheet" type="text/css" href="css/products.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+   <div id = "overlay">
+    <div class="overlay-content">
+      <a href="#/" onclick="">Energy Calculator</a>
+      <br>
+      <a href="#/" onclick="goToSection('blog')">Blog</a>
+      <br>
+      <a href="#/" onclick="goToSection('solution-providers')">Solution Provider</a>
+      <br>
+      <a href="#/" onclick="goToSection('register')">Sign-Up</a>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <section id ="hero-section" >
+      <img src="img/main-bg.jpg" alt="hero-image" class="row hero-image">
+      <div id="nav" class="row">
+        <div class="nav-left col-sm-12" onclick="goToSection('home')"><span>Imperium</span></div>
+        <div class="nav-right col-sm-12">
+          <span class="hidden-xs">Energy Calculator</span>
+          <span class="hidden-xs" onclick="goToSection('blog')">Blog</span>
+          <span class="hidden-xs" onclick="goToSection('solution-providers')">Solution Provider</span>
+          <span class="hidden-xs" onclick="goToSection('login')">Login</span>
+          <div id="menu-icon" class="hidden-sm hidden-md hidden-lg" onclick="menuIconClick(this)">
+              <div id="bar1"></div>
+              <div id="bar2"></div>
+              <div id="bar3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row hero-left-margin">
+        <div class="col-md-8 col-md-offset-2 col-sm-offset-1 hero-big-text">Products to power your home</div>
+        <div class="col-md-5 col-md-offset-2 col-sm-offset-1 hero-small-text">We are empowering local businesses in the renewble energy sector.</div>
+      </div>
+    </section>
+  </div>  
+  <script src="js/main.js"></script>
+</body>
+</html>

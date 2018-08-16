@@ -1,0 +1,310 @@
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: normal;
+  src: url("/fonts/IBMPlexSans-Regular.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: 500;
+  src: url("/fonts/IBMPlexSans-Medium.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: 300;
+  src: url("/fonts/IBMPlexSans-Light.ttf"); }
+@font-face {
+  font-family: 'HelveticaNeue';
+  font-weight: 500;
+  src: url("/fonts/HelveticaNeue-Medium.ttf"); }
+body {
+  font-family: 'IBMPlexSans';
+  font-weight: normal;
+  color: black;
+  background-color: #ffffff; }
+
+button:focus {
+  outline: none; }
+
+button {
+  border: none; }
+
+.login-box {
+  height: 516px;
+  border-radius: 5px;
+  background-color: #f6f6f6c7;
+  margin-top: 229px;
+  padding-top: 67px;
+  margin-bottom: 279px; }
+  .login-box .text-welcome {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    color: #000000; }
+  .login-box .footer-area {
+    text-align: center;
+    margin-top: 22px; }
+    .login-box .footer-area button {
+      background: transparent;
+      border: none;
+      color: #748827; }
+
+.dropdown {
+  margin-right: 20px;
+  border: solid 1px #efefef;
+  height: 36px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #fff;
+  background: #fff;
+  margin-top: 48px; }
+
+.dropdown:after {
+  top: 50%;
+  left: 89%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #000000;
+  border-width: 5px;
+  margin-top: -2px;
+  z-index: 100; }
+
+.dropdown select {
+  font-weight: lighter;
+  padding: 6px 6px;
+  color: #000000c2;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.dropdown select:focus {
+  outline: none; }
+
+input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbbbbb; }
+
+input {
+  background: transparent; }
+
+.button-login {
+  width: 103%;
+  margin-left: -1.5%;
+  margin-top: 35px;
+  height: 39px;
+  border-radius: 5px;
+  background-color: #748827;
+  color: white;
+  box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.06); }
+
+.button-login:focus {
+  outline: none; }
+
+.text-box {
+  width: 103%;
+  margin-left: -1.5%;
+  height: 36px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #efefef;
+  margin-top: 20px; }
+
+.text-box:focus {
+  outline: none; }
+
+#wrapper-sign-up {
+  height: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+  #wrapper-sign-up .display-none {
+    display: none; }
+  #wrapper-sign-up #left-column {
+    float: left;
+    width: 47%;
+    height: 100%;
+    background-image: url("/img/rec-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #wrapper-sign-up #right-column {
+    float: right;
+    width: 53%;
+    height: 100%; }
+    #wrapper-sign-up #right-column .margin-bottom-18 {
+      margin-bottom: 18px; }
+    #wrapper-sign-up #right-column #form-bus, #wrapper-sign-up #right-column #form-rm {
+      display: none; }
+    #wrapper-sign-up #right-column .login-text {
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      color: gray; }
+      #wrapper-sign-up #right-column .login-text button {
+        background: transparent;
+        border: none;
+        color: #748827; }
+    #wrapper-sign-up #right-column .button-login {
+      width: 92%;
+      margin-left: 4%;
+      margin-top: 46px;
+      height: 39px;
+      border-radius: 5px;
+      background-color: #748827;
+      color: white;
+      box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.06); }
+    #wrapper-sign-up #right-column .button-login:focus {
+      outline: none; }
+    #wrapper-sign-up #right-column .location-dropdown {
+      margin-right: 20px;
+      border: 1px solid #ccc;
+      width: 100%;
+      height: 36px;
+      border-radius: 3px;
+      overflow: hidden;
+      background-color: #fff;
+      background: #fff;
+      position: relative;
+      height: 36px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      border: solid 1px #65aa4f; }
+    #wrapper-sign-up #right-column .location-dropdown:after {
+      top: 50%;
+      left: 89%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(0, 0, 0, 0);
+      border-top-color: #000000;
+      border-width: 5px;
+      margin-top: -2px;
+      z-index: 100; }
+    #wrapper-sign-up #right-column select {
+      font-weight: lighter;
+      padding: 6px 6px;
+      color: #000000c2;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      background-image: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+    #wrapper-sign-up #right-column select:focus {
+      outline: none; }
+    #wrapper-sign-up #right-column .text-welcome {
+      margin-top: 100px;
+      text-align: center;
+      font-size: 24px;
+      color: #000000;
+      line-height: 0.83;
+      font-weight: 300;
+      margin-bottom: 40px; }
+    #wrapper-sign-up #right-column .test {
+      width: 100%;
+      text-align: center; }
+    #wrapper-sign-up #right-column .red {
+      background: red; }
+    #wrapper-sign-up #right-column .user-type {
+      text-align: center;
+      font-size: 20px;
+      color: #7d7d7d; }
+      #wrapper-sign-up #right-column .user-type span {
+        cursor: pointer; }
+      #wrapper-sign-up #right-column .user-type .underline {
+        height: 20px;
+        height: 3px;
+        background-color: #748827;
+        width: 50%;
+        margin: 0 auto; }
+    #wrapper-sign-up #right-column .form-fields {
+      padding-top: 70px;
+      height: 100px; }
+      #wrapper-sign-up #right-column .form-fields input {
+        padding-left: 11px;
+        margin-bottom: 18px; }
+      #wrapper-sign-up #right-column .form-fields input::placeholder {
+        font-size: 14px;
+        color: #bbbbbb; }
+      #wrapper-sign-up #right-column .form-fields input:focus {
+        outline: none; }
+      #wrapper-sign-up #right-column .form-fields .text-field {
+        height: 36px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        border: solid 1px #65aa4f; }
+      #wrapper-sign-up #right-column .form-fields .wrapper-text-field {
+        width: 100%;
+        height: 36px;
+        margin-left: 1px;
+        margin-bottom: 18px; }
+        #wrapper-sign-up #right-column .form-fields .wrapper-text-field .left-field {
+          float: left;
+          width: 54%;
+          height: 100%;
+          margin-left: -17px;
+          border-radius: 3px;
+          background-color: #ffffff;
+          border: solid 1px #65aa4f; }
+        #wrapper-sign-up #right-column .form-fields .wrapper-text-field .right-field {
+          float: right;
+          width: 50%;
+          height: 100%;
+          margin-right: -14px;
+          border-radius: 3px;
+          background-color: #ffffff;
+          border: solid 1px #65aa4f; }
+
+@media screen and (max-width: 1600px) {
+  #wrapper-sign-up #right-column .user-type {
+    font-size: 18px; } }
+@media screen and (max-width: 1500px) {
+  #wrapper-sign-up #left-column {
+    width: 40%; }
+  #wrapper-sign-up #right-column {
+    width: 60%; }
+    #wrapper-sign-up #right-column .user-type {
+      font-size: 17px; }
+      #wrapper-sign-up #right-column .user-type .underline {
+        width: 45%; } }
+@media screen and (max-width: 1100px) {
+  #wrapper-sign-up #left-column {
+    width: 0%; }
+  #wrapper-sign-up #right-column {
+    width: 100%; }
+    #wrapper-sign-up #right-column .user-type {
+      font-size: 20px; }
+      #wrapper-sign-up #right-column .user-type .underline {
+        width: 40%; } }
+@media screen and (max-width: 1100px) {
+  #wrapper-sign-up #right-column {
+    width: 100%; }
+    #wrapper-sign-up #right-column .user-type {
+      font-size: 18px; } }
+@media screen and (max-width: 1000px) {
+  #wrapper-sign-up #right-column {
+    width: 100%; }
+    #wrapper-sign-up #right-column .user-type {
+      font-size: 17px; } }
+@media screen and (max-width: 767.5px) {
+  .dropdown {
+    width: 100%; }
+
+  .text-box, .button-login {
+    width: 100%;
+    margin-left: 0%; } }
+@media screen and (max-width: 320px) {
+  .login-box .text-welcome {
+    font-size: 22px; } }
+
+/*# sourceMappingURL=login.css.map */

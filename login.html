@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Renewable Energy</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <link rel="stylesheet" type="text/css" href="css/login.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="login-box col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+      <div class="col-sm-12 text-welcome">Welcome to Imperium</div>
+      <div class="dropdown col-sm-8 col-sm-offset-2">
+          <select id="selectBox" class="col-xs-12">
+            <option value="IND">Customer</option>
+            <option value="VEN">Vendor</option>
+            <option value="VEN">Relationship Manager</option>
+          </select>
+      </div>
+      <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <input type="text" class="col-xs-12 text-box" placeholder="Username">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <input type="password" class="col-xs-12 text-box" placeholder="Password">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <button class="col-xs-12 button-login">Log In</button>
+          </div>
+      </div>
+      <div class="col-sm-12 footer-area">New here? <button onclick="goToSection('register')">Register</button> <br><button>Forgot Password</button></div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

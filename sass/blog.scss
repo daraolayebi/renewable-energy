@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: normal;
+    src: url('/fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 500;
+    src: url('/fonts/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-weight: 500;
+    src: url('/fonts/HelveticaNeue-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    font-weight: normal;
+    src: url('/fonts/BebasNeue-Regular.ttf');
+}
+
+
+body{
+    font-family: 'IBMPlexSans';
+    font-weight: normal;
+    color: black;
+    /* overflow: hidden; */
+}
+
+#hero-section{
+    width: 100%;
+    height: 636px;
+    // height: auto;
+    color: white;
+
+    .hero-image{
+        // position: absolute;
+        width: 100%;
+        height: 636px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero-big-text{
+        font-size: 68px;
+        text-transform: uppercase;
+        margin-top: 170px;
+        font-family: 'BebasNeue';
+        font-weight: normal;
+    }
+
+    .hero-small-text{
+        font-size: 27px;
+        margin-top: 8px;
+        padding-left: 0px;
+    }
+
+
+    .thin-vertical-line{
+        width: 1px;
+        height: 89px;
+        border: solid 1px #ffffff;
+        margin-left: -10px;
+        margin-top: 135px;
+    }
+
+}
+
+#blog-content{
+    height: auto;
+    // background: red;
+    // height: 400px;
+    padding-top: 143px;
+    font-weight: normal;
+    margin-bottom: 193px;
+
+    .article-type-1{
+        width: 99%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0 10px 13px 8px rgba(0, 0, 0, 0.06);
+        padding-top: 16px;
+        padding-left: 30px;
+        height: 455px;
+        padding-bottom: 10px;
+        margin-bottom: 61px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        .author-img{
+            width: 43px;
+            height: 43px;
+            background-color: #d8d8d8;
+            border-radius: 50px;
+    
+        }
+
+        .article-title{
+           font-size: 24px;
+           color: #1f1f1f;
+           margin-top: 14px;
+        }
+
+        .article-short-content{
+            line-height: 1.4;
+            color: #53585d;
+            font-family: helvetica;
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 9px;
+        }
+
+        .article-img{
+            width: 100%;
+            height: 121px;
+            object-fit: cover;
+            object-position: center;
+            margin-top: 15px;
+        }
+
+        .thin-divider{
+            width: 100%;
+            height: 3px;
+            background: #eaebee;
+            margin-top: 47px;
+
+        }
+
+        .article-type{
+            margin-bottom: 14px;
+            margin-top: 12px;
+            font-family: Helvetica;
+            font-size: 11px;
+            color: #93979f;
+            font-weight: normal;
+
+            span{
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .test{
+        // background: red;
+    }
+
+    .article-type-1:hover{
+        margin-top: -20px;
+        box-shadow: 0 10px 20px 16px rgba(0, 0, 0, 0.06);
+        transition: 0.2s ease-in-out;
+    }
+
+}
+
+.color-black{
+    color: #53585d;
+}
+
+@media screen and (max-width: 1500px){
+    .col-lg-8{
+        // display: none;
+        width: 80%;
+    }
+
+    .col-lg-offset-2{
+        left: -5%;
+    }
+
+    #blog-content{
+        .article-type-1:hover{
+            margin-top: 0px;
+            box-shadow: 0 10px 30px 16px rgba(0, 0, 0, 0.06);
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    .col-lg-offset-2{
+        left: 2.5%;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .col-lg-8{
+        // display: none;
+        width: 90%;
+    }
+
+    .col-lg-offset-2{
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .col-lg-8{
+        // display: none;
+        width: 90%;
+    }
+
+    .col-lg-offset-2{
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .col-lg-8{
+        // display: none;
+        width: 100%;
+    }
+
+    .col-lg-offset-2{
+        left: 0%;
+    }
+}
