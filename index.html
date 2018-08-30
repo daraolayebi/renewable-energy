@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Custom Fonts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>$(function () { $('#nav').load('partials/nav.html');});</script>
 </head>
 <body>
-   <div id = "overlay">
+  <div id = "overlay">
     <div class="overlay-content">
       <a href="#/" onclick="">Energy Calculator</a>
       <br>
@@ -24,24 +25,9 @@
   </div>
   <div class="container-fluid">
     <section id ="hero-section" >
-      <img src="img/main-bg.jpg" alt="hero-image" class="row hero-image">
+      <img src="img/main-bg.jpg" alt="hero-image" class="row hero-image" id="hero-image">
       <div id="nav" class="row">
-        <!-- <div class="nav-left col-sm-12" onclick="goToSection('home')"><span>Imperium</span></div> -->
-        <div class="nav-left col-sm-12">
-          <img src="img/Imperium logo without payoff.png" alt="Imperium logo" class="logo" onclick="goToSection('home')">
-        </div>
-        <div class="nav-right col-sm-12">
-          <span class="hidden-xs">Energy Calculator</span>
-          <span class="hidden-xs" onclick="goToSection('blog')">Blog</span>
-          <span class="hidden-xs" onclick="goToSection('solution-providers')">Solution Provider</span>
-          <span class="hidden-xs" onclick="goToSection('login')">Login</span>
-          <!-- Sign-Up -->
-          <div id="menu-icon" class="hidden-sm hidden-md hidden-lg" onclick="menuIconClick(this)">
-              <div id="bar1"></div>
-              <div id="bar2"></div>
-              <div id="bar3"></div>
-          </div>
-        </div>
+       
       </div>
       <div class="row hero-left-margin">
         <div class="col-md-6 col-md-offset-2 col-sm-offset-1 hero-big-text">Smarter, Safer<br>energy solutions just for you</div>

@@ -16,6 +16,12 @@
     src: url('/fonts/HelveticaNeue-Medium.ttf');
 }
 
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-weight: 200;
+    src: url('/fonts/HelveticaNeue\ Light.ttf');
+}
+
 
 body{
     font-family: 'IBMPlexSans';
@@ -176,8 +182,17 @@ button:focus{
         font-size: 14px;
         text-align: right;
         padding-right: 0px;
-        // font-family: 'HelveticaNeue';
-        // font-weight: 500;
+        font-family: 'HelveticaNeue';
+        font-weight: 200;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+
+        .outline{
+            border-radius: 18px;
+            padding: 6px 11px;
+            border: solid 1px #ffffff;
+        }
 
         span{
             margin-right: 28px;

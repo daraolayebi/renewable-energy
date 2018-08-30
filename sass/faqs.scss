@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: normal;
+    src: url('/fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 300;
+    src: url('/fonts/IBMPlexSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 500;
+    src: url('/fonts/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-weight: 500;
+    src: url('/fonts/HelveticaNeue-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    font-weight: normal;
+    src: url('/fonts/BebasNeue-Regular.ttf');
+}
+
+
+body{
+    font-family: 'IBMPlexSans';
+    font-weight: normal;
+    color: black;
+    /* overflow: hidden; */
+}
+
+#hero-section{
+    width: 100%;
+    height: 636px;
+    // height: auto;
+    color: white;
+
+    .hero-image{
+        // position: absolute;
+        width: 100%;
+        height: 636px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero-big-text{
+        font-size: 68px;
+        margin-top: 170px;
+        // font-family: 'BebasNeue';
+        font-family: 'IBMPlexSans';
+        font-weight: normal;
+    }
+
+    .hero-small-text{
+        font-size: 27px;
+        margin-top: 8px;
+        padding-left: 0px;
+    }
+
+
+    .thin-vertical-line{
+        width: 1px;
+        height: 89px;
+        border: solid 1px #ffffff;
+        margin-left: -10px;
+        margin-top: 135px;
+    }
+
+}
+
+.question-box{
+    width: 97%;
+    // height: 60px;
+    padding-bottom: 19px;
+    border-radius: 6px;
+    border: solid 1px rgba(156, 167, 153, 0.5);
+    font-size: 17px;
+    color: #6e6e6ef8;
+    padding-top: 15px;
+    padding-left: 5px;
+
+    .fa{
+        color: #73af12;
+        // color: #65aa4f;
+    }
+}
+
+#faq-section{
+    padding-top: 124px; 
+    padding-bottom: 160px;
+
+    .text-faq{
+        color: #65aa4f;
+        font-size: 22px;
+        margin-bottom: 64px;
+    }
+}
+
+.faq-left-section{
+    float: left;
+    width: 50%;
+    height: 100px;
+    // background: red;
+
+    .question-box{
+        float: left;
+    }
+}
+
+.faq-right-section{
+    float: left;
+    width: 50%;
+    height: 100px;
+
+    .question-box{
+        float: right;
+    }
+
+}
+
+.answer{
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #6e6e6e;
+}
+
