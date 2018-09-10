@@ -5,24 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Renewable Energy</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/contact.css"> 
   <link rel="stylesheet" type="text/css" href="css/faqs.css">
   <link rel="stylesheet" type="text/css" href="css/blog.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>$(function () { $('#nav').load('partials/nav.html');});</script>
+  <script>$(function () { $('#overlay').load('partials/nav-mobile.html');});</script>
+  <script>$(function () { $('#footer').load('partials/footer.html');});</script>
 </head>
 <body>
   <div id = "overlay">
-    <div class="overlay-content">
-      <a href="#/" onclick="">Energy Calculator</a>
-      <br>
-      <a href="#/" onclick="goToSection('blog')">Blog</a>
-      <br>
-      <a href="#/" onclick="goToSection(8)">Solution Provider</a>
-      <br>
-      <a href="#/" onclick="goToSection('login')">Login</a>
-    </div>
+    
   </div>
   <div class="container-fluid">
     <section id ="hero-section" >
@@ -31,7 +26,8 @@
   
       </div>
       <div class="row hero-left-margin">
-        <div class="col-md-10 col-md-offset-2 col-sm-offset-1 hero-big-text">Frequently Asked Questions</div>
+        <div class="col-md-10 col-md-offset-2 col-sm-offset-1 hero-big-text hidden-xs">Frequently Asked Questions</div>
+        <div class="col-md-10 col-md-offset-2 col-sm-offset-1 hero-big-text hidden-sm hidden-md hidden-lg">FAQs</div>
         <div class="col-md-6 col-md-offset-2 col-sm-offset-1 hero-small-text">Answers to your questions.</div>
         <div class="col-sm-8 col-md-offset-2 col-sm-offset-1">
           <div class="thin-vertical-line"></div>
@@ -40,21 +36,182 @@
     </section>
     <section id="faq-section" class="row">
       <div class="col-sm-8 col-sm-offset-2">
-        <div class="row text-faq">Frequently Asked Questions</div>
-        <div class="row">
+        <div class="row text-faq col-sm-12">Frequently Asked Questions</div>
+        <div class="row col-sm-12">
           <div class="faq-left-section">
             <div class="question-box">
-              <div class="col-xs-11 question">What is Renewable Energy? Is it not just solar?</div>
-              <div class="col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">What is Renewable Energy? Is it not just solar?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+                <!-- <div class="col-xs-1"><i class="fa fa-minus-circle"></i></div> -->
+              </div>
               <div class="col-xs-12 answer">
-                  Outright purchase/payment through our payment gateway, Lease to Own through Specta or Power as a Service (you purchase a Pay as you go voucher on a monthly basis
+                RE is energy from a source that is not depleted when used such as wind or solar
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">I hear it is very expensive, how can I afford it?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                Imperium offers you affordable options to meet your energy needs. 
+                You can either choose Power as a Service (PaaS) or Lease to own to get started. 
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">What can I power with Solar Home System?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  You can power all your appliances as long as your system size matches with your intended usage. Please visit our product page for more information
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">How many hours of power can I get?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  You can get up to 24hrs of power as long as you monitor your energy usage during the day so as to conserve enough power for night time use when the panel isn’t generating electricity.
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">Will I need to use my generator if I purchase a Solar Home System?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  No!
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">How durable are your products?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  Our product suppliers are reliable high premium brands in the solar space
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">How many years warranty do you offer on your products?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                We offer up to 2 years
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">What is the life span of your equipment?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  Please go to our product page for more information
               </div>
             </div>
           </div>
           <div class="faq-right-section">
-            <div class="question-box"></div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">What happens after my warranty expires?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  We offer comprehensive insurance package
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">What happens if/when my equipment develops faults?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                Our committed customer service personnel  is on hand to help should you have any concerns about your system 
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">Do you carry out installations?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  Yes, we do!
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">How quickly do you install?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                Installation is done 7 days after confirmation of payment 
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">How much do your systems cost?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  Please visit our product page for more information
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">What are the payment options?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  Outright purchase/payment through our payment gateway, Lease to Own through Specta   or Power as a Service (you purchase a Pay as you go voucher on a monthly basis
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">What is Renewable Energy? Is it not just solar?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                  purchase a Pay as you go voucher on a monthly basis
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="faq-clickable-section" onclick="toggleAnswer(this)">
+                <div class="col-sm-11 col-xs-10 question">Can I upgrade my system?</div>
+                <div class="col-sm-1 col-xs-1"><i class="fa fa-plus-circle"></i></div>
+              </div>
+              <div class="col-xs-12 answer">
+                 Yes, you can. Please call XXXXXXXX for information.
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="footer" class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        <div class="col-sm-4 footer-column">
+          <div class="col-sm-12 text-bold">COMPANY</div>
+          <div class="col-sm-12 link text-light">About</div>
+          <div class="col-sm-12 link text-light">FAQ</div>
+          <div class="col-sm-12 link text-light">Blog</div>
+        </div>
+        <div class="col-sm-4 footer-column">
+          <div class="col-sm-12 text-bold">Business</div>
+          <div class="col-sm-12 link text-light">Calculator</div>
+          <div class="col-sm-12 link text-light">Products</div>
+          <div class="col-sm-12 link text-light">Partnership</div>
+        </div>
+        <div class="col-sm-4 footer-column">
+          <div class="col-sm-12 text-bold">Contact Us</div>
+          <div class="col-sm-12 link text-light">20, Marina, Lagos State</div>
+          <div class="col-sm-12 link text-light">0700-IMPERIUM</div>
+          <div class="col-sm-12 link text-light"><a href="mailto:Imperiumng@sterlinbankng.com" target="_top">Imperiumng@sterlinbankng.com</a></div>
+        </div>
+        <div class="col-sm-12 text-copyright">© Copyright 2018 | Privacy Policy</div>
       </div>
     </section>
   </div>

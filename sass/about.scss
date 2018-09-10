@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: normal;
+    src: url('/fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 300;
+    src: url('/fonts/IBMPlexSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 200;
+    src: url('/fonts/IBMPlexSans-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 500;
+    src: url('/fonts/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-weight: 500;
+    src: url('/fonts/HelveticaNeue-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    font-weight: normal;
+    src: url('/fonts/BebasNeue-Regular.ttf');
+}
+
+
+body{
+    font-family: 'IBMPlexSans';
+    font-weight: normal;
+    color: black;
+    /* overflow: hidden; */
+}
+
+#section-the-brand{
+    padding-top: 148px;
+    padding-bottom: 120px;
+}
+
+.left-section{
+    width: 60%;
+    float: left;
+}
+
+.title-text-green{
+    font-size: 22px;
+    color: #65aa4f
+}
+
+.text-enablers{
+    color: #6e6e6e;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.text-grey{
+    font-size: 19px;
+    margin-top: 25px;
+    color: #6e6e6ee0;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.text-black{
+    color: #222222;
+}
+
+.text-big-green{
+    margin-top: 20px;
+    font-weight: 300;
+    color: #65aa4f;
+    font-size: 30px;
+}
+
+#section-vision{
+    // width: 100%;
+    padding-bottom: 128px;
+
+    .top-section{
+        margin-top: 90px;
+        // background: wheat;
+
+        .left-part{
+            float: left;
+            width: 40%;
+
+            .imperium-logo-black{
+                width: 305px;
+                height: 121px;
+                background-size: contain;
+                background-image: url("/img/Imperium\ logo\ black.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                padding-top: 300px;
+            }
+        }
+
+        .right-part{
+            float: right;
+            width: 60%;
+        }
+    }
+
+    .bottom-section{
+        margin-top: 110px;
+
+        .right-part{
+            float: right;
+            width: 49%;
+            transition: 0.5s;
+        }
+
+        .left-part, .right-part{
+            padding-left: 35px;
+            padding-top: 31px;
+            padding-bottom: 50px;
+            // height: 300px;
+            background-color: #ffffff;
+            border: solid 1px rgba(151, 151, 151, 0.43);
+        }
+
+        .left-part{ 
+            float: left;
+            width: 49%;
+            padding-bottom: 60px;
+            transition: 0.5s;
+        }
+
+        .left-part:hover, .right-part:hover{
+            transition: 0.5s;
+            box-shadow: 0 10px 13px 8px rgba(0, 0, 0, 0.06);
+        }
+    }
+
+    .colored-bg{
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        background-color: rgba(249, 252, 220, 0.72);
+    }
+}
+
+.text-light-grey{
+    font-size: 28px;
+    color: #6e6e6ebe;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.text-light-italic{
+    font-weight: 200;
+}
+
+@media screen and (max-width: 1500px){
+   .left-section{
+       width: 100%;
+   }
+
+   #section-vision{
+    // width: 100%;
+    padding-bottom: 128px;
+
+    .colored-bg{
+       height: 100%;
+    }
+
+    .top-section{
+        margin-top: 0px;
+        // background: wheat;
+
+        .left-part{
+            float: left;
+            width: 100%;
+
+            .imperium-logo-black{
+                width: 305px;
+                height: 121px;
+                background-size: contain;
+                background-image: url("/img/Imperium\ logo\ black.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                padding-top: 300px;
+            }
+        }
+
+        .right-part{
+            float: right;
+            width: 100%;
+        }
+    }
+    
+  }
+
+}
+
+// @media screen and (max-width: 1280px){
+//     #section-vision{
+//         .colored-bg{
+//             height: 130%;
+//          }
+//     }
+    
+// }
+
+@media screen and (max-width: 800px){
+    #section-vision{
+        background-color: rgba(249, 252, 220, 0.72);
+
+        .bottom-section{
+            margin-top: 110px;
+    
+            .left-part, .right-part{
+                float: left;
+                width: 100%;
+                transition: 0s;
+                padding-left: 15px;
+            }
+
+            .left-part{ 
+                margin-bottom: 50px;
+            }
+        }
+        
+      }
+}

@@ -71,22 +71,35 @@ body {
 
 .faq-left-section {
   float: left;
-  width: 50%;
-  height: 100px; }
+  width: 50%; }
   .faq-left-section .question-box {
-    float: left; }
+    float: left;
+    margin-bottom: 20px; }
 
 .faq-right-section {
-  float: left;
-  width: 50%;
-  height: 100px; }
+  float: right;
+  width: 50%; }
   .faq-right-section .question-box {
-    float: right; }
+    float: right;
+    margin-bottom: 20px; }
 
 .answer {
   margin-top: 20px;
   font-size: 17px;
   font-weight: 300;
-  color: #6e6e6e; }
+  color: #6e6e6e;
+  display: none; }
+
+.faq-clickable-section {
+  cursor: pointer; }
+
+@media screen and (max-width: 720px) {
+  .faq-left-section {
+    width: 100%; }
+
+  .faq-right-section {
+    width: 100%; }
+    .faq-right-section .question-box {
+      float: left; } }
 
 /*# sourceMappingURL=faqs.css.map */

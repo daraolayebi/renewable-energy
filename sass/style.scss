@@ -11,6 +11,12 @@
 }
 
 @font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 300;
+    src: url('/fonts/IBMPlexSans-Light.ttf');
+}
+
+@font-face {
     font-family: 'HelveticaNeue';
     font-weight: 500;
     src: url('/fonts/HelveticaNeue-Medium.ttf');
@@ -34,6 +40,34 @@ button:focus{
     outline: none;
 }
 
+.btn-learn-more{
+    margin-bottom: 110px;
+}
+.text-read-more{
+    font-size: 12px;
+    color: #65aa4f;
+    margin-top: 10px;
+
+    span{
+        cursor: pointer;
+    }
+    
+}
+
+.arrow{
+    color:#c9e00c;
+}
+
+.text-learn-more{
+    font-size: 17px;
+    color: #65aa4f;
+    cursor: pointer;
+}
+
+.product-desc-more{
+    display: none;
+}
+
 #overlay {
     height: 0%;
     width: 100%;
@@ -49,17 +83,19 @@ button:focus{
 
     .overlay-content {
         position: relative;
-        top: 30%;
-        text-align: center;
+        top: 20%;
+        // text-align: center;
+
+        padding-left: 45px;
 
         a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 21px;
             color: white;
             display: inline-block;
             text-align: center;
             transition: 0.3s;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
     }
     
@@ -259,12 +295,13 @@ button:focus{
         color: #6e6e6e;
         text-align: center;
         font-size: 30px;
-        margin-bottom: 105px;
+        margin-bottom: 30px;
     }
 
     .small-text{
-        font-size: 22px;
+        font-size: 30px;
         color: #6e6e6e;
+        color: #65aa4f;
         text-align: center;
         margin-bottom: 70px;
     }
@@ -304,8 +341,28 @@ button:focus{
         width: 60px;
         border-radius: 5px;
         margin: 0 auto;
-        background-color: #d8d8d8;
+        // background-color: #d8d8d8;
+    }
 
+    .img-calc{
+        background-size: contain;
+        background-image: url("/img/img-calc.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .img-shop{
+        background-size: contain;
+        background-image: url("/img/img-shop.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .img-leaf-plug{
+        background-size: contain;
+        background-image: url("/img/img-leaf-plug.png");
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .title-text{
@@ -408,10 +465,11 @@ button:focus{
 #section-4{
     // background: #000000;
     // height: 50px;;
+    padding-bottom: 40px;
     padding-top: 124px;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 137px;
+    // margin-bottom: 137px;
     background-color: #f4f8cc57;
     // background-color: #f4f8cc;
 
@@ -422,25 +480,29 @@ button:focus{
 
     .reach-count{
         margin-top: 60px;
+        margin-bottom: 73px;
 
         .num-big{
             color: #4a4a4a;
+            color: #65aa4f;
             font-size: 90px;
 
             span{
                 font-size: 24px;
                 display: block;
                 margin-top: -10px;
+                color: #4a4a4a;
+                font-weight: 300;
             }
         }
     }
 
-    .text-learn-more{
-        font-size: 22px;
-        color: #6e6e6e;
-        margin-top: 70px;
-        margin-bottom: 137px;
-    }
+    // .text-learn-more{
+    //     font-size: 22px;
+    //     color: #6e6e6e;
+    //     margin-top: 70px;
+    //     margin-bottom: 137px;
+    // }
 }
 
 #section-featured-products{
@@ -448,14 +510,15 @@ button:focus{
     padding-top: 105px;
 
     .title-text{
-        font-size: 27px;
+        font-size: 30px;
         text-align: center;
         color: #4a4a4a;
+        color: #65aa4f;
         font-weight: normal;
     }
 
     .featured-products-group{
-        margin-top: 100px;
+        margin-top: 120px;
 
         .featured-product{
             width: 240px;
@@ -465,15 +528,36 @@ button:focus{
             margin-bottom: 80px;
 
             .product-image{
-                width: 100%;
+                width: 104px;
                 // height: 70%;
-                height: 247px;
-                background-color: #919191;
+                height: 88px;
+                // background-color: #919191;
+            }
+
+            .img-lease{
+                background-size: contain;
+                background-image: url("/img/img-lease.png");
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .img-paas{
+                background-size: contain;
+                background-image: url("/img/img-paas.png");
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .img-imf{
+                background-size: contain;
+                background-image: url("/img/img-imf.png");
+                background-position: center;
+                background-repeat: no-repeat;
             }
 
             .product-title{
                 color: #4a4a4a;
-                font-size: 27px;
+                font-size: 22px;
                 padding-left: 0px;
                 margin-top: 36px;
             }
@@ -522,6 +606,48 @@ button:focus{
     height: 486px;
     background-color: #adadad;
     margin-top: 232px;  
+}
+
+#footer{
+    padding-top: 73px;
+    padding-bottom: 40px;
+    background-color: #64842c;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+
+    .link{
+        cursor: pointer;
+    }
+
+    .text-bold{
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .text-light{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 5px; 
+    }
+
+    a{
+        text-decoration: none;
+        outline: none;
+        color: white;
+    }
+
+    .text-copyright{
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 90px;
+    }
+
+    .footer-column{
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 1200px){

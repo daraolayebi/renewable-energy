@@ -10,18 +10,12 @@
   <!-- Custom Fonts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>$(function () { $('#nav').load('partials/nav.html');});</script>
+  <script>$(function () { $('#overlay').load('partials/nav-mobile.html');});</script>
+  <script>$(function () { $('#footer').load('partials/footer.html');});</script>
 </head>
 <body>
   <div id = "overlay">
-    <div class="overlay-content">
-      <a href="#/" onclick="">Energy Calculator</a>
-      <br>
-      <a href="#/" onclick="goToSection('blog')">Blog</a>
-      <br>
-      <a href="#/" onclick="goToSection('solution-providers')">Solution Provider</a>
-      <br>
-      <a href="#/" onclick="goToSection('register')">Sign-Up</a>
-    </div>
+    
   </div>
   <div class="container-fluid">
     <section id ="hero-section" >
@@ -39,32 +33,33 @@
       <!-- <div class="hero-big-text row col-sm-12">Saving our planet,<br>one household at a time</div> -->
     </section>
     <section id="section-2">
-       <div class="big-text col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3">According to experts, energy bills shouldn't exceed 6% of income. But many Nigerians spend 20-50%. Help us lift the burden.</div>
+       <div class="big-text col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3">Energy experts say your energy bills shouldn't exceed 6% of income. But many Nigerians spend 20-50%. We’re here to help turn this tide.</div>
+       <div class="col-sm-12 btn-learn-more"><span class="text-learn-more" onclick="goToSection('about')">Learn More</span> <span class="arrow">&nbsp; &#x2192;</span></div>
        <div class="small-text col-sm-12">How we’re helping:</div>
        <div class="col-sm-10 col-sm-offset-1">
          <div class="col-md-4 box-section">
-           <div class="box"></div>
+           <div class="box img-calc"></div>
            <div class="title-text col-sm-12">Evaluation</div>
            <div class="desc-text col-sm-12">Start with our solar calculator to find out what you could save and earn.</div>
            <!-- <button class="col-sm-6 col-sm-offset-3"> -->
            <button class="col-sm-10 col-sm-offset-1">
-             <div><span class="button-text">Calculate</span> &#x2192;</div>
+             <div><span class="button-text">Calculate</span> <span class="arrow">&nbsp; &#x2192;</span></div>
            </button>
          </div>
           <div class="col-md-4 box-section">
-            <div class="box"></div>
+            <div class="box img-leaf-plug"></div>
             <div class="title-text col-sm-12">Solution</div>
             <div class="desc-text col-sm-12">Together we’ll find the best system for you, your home and your budget.</div>
             <button class="col-sm-10 col-sm-offset-1">
-              <div><span class="button-text">See products</span> &#x2192;</div>
+              <div><span class="button-text">See products</span><span class="arrow">&nbsp; &#x2192;</span></div>
             </button>
          </div>
          <div class="col-md-4 box-section">
-            <div class="box"></div>
+            <div class="box img-shop"></div>
             <div class="title-text col-sm-12">Solution Providers</div>
             <div class="desc-text col-sm-12">Our installer partners will fit and test your new system. And we’ll be there every step of the way.</div>
             <button class="col-sm-10 col-sm-offset-1">
-              <div><span class="button-text">Find a provider</span> &#x2192;</div>
+              <div><span class="button-text">Find a provider</span> <span class="arrow">&nbsp; &#x2192;</span></div>
             </button>
          </div> 
        </div>
@@ -90,26 +85,38 @@
         <div class="col-sm-12 col-sm-offset-0 col-lg-8 col-lg-offset-2 ">
           <div class="col-sm-4">
             <div class="featured-product">
-              <div class="product-image"></div>
-              <div class="col-sm-12 product-title">Solar Systems</div>
-              <div class="col-sm-12 product-desc">Choose from a range of solar panels and battery storage. Mix and match your system with our expert to find the right E.ON Solar solution for you.</div>
+              <div class="product-image img-lease"></div>
+              <div class="col-sm-12 product-title">Lease to Own<br>(Imperium L2O)</div>
+              <div class="col-sm-12 product-desc">
+                Choose from a range of solar panels and battery storage. Mix and match your system with our expert to find the right E.ON Solar solution for you. 
+                <span class="product-desc-more">You check the cost and well, let’s just say you’ll rather not opt for an outright payment right away. Not to worry, we can work out an arrangement for you to pay in instalments.</span>
+                <div class="text-read-more"><span onclick="expandText(this)">Read More</span></div>
+              </div>
               <button class="button-view-products col-sm-7">View Products</button>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="featured-product">
-              <div class="product-image"></div>
-              <div class="col-sm-12 product-title">Biomass</div>
-              <div class="col-sm-12 product-desc">Choose from a range of solar panels and battery storage. Mix and match your system with our expert to find the right E.ON Solar solution for you.</div>
+              <div class="product-image img-paas"></div>
+              <div class="col-sm-12 product-title">Power As A Service<br>(Imperium PaaS)</div>
+              <div class="col-sm-12 product-desc">
+                  With Imperium PaaS, you don’t need to own the actual infrastructure to enjoy power. Like the PHCN model you are already used to, you only pay for the power generated.
+                <span class="product-desc-more"> So, you are assured access to power but get billed for the wattage of electricity used. It’s Kind of like your TV Subscription</span>
+                <div class="text-read-more"><span onclick="expandText(this)">Read More</span></div>
+              </div>
               <button class="button-view-products col-sm-7">View Products</button>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="featured-product">
-              <div class="product-image"></div>
-              <div class="col-sm-12 product-title">Wind</div>
-              <div class="col-sm-12 product-desc">Choose from a range of solar panels and battery storage. Mix and match your system with our expert to find the right E.ON Solar solution for you.</div>
-              <button class="button-view-products col-sm-7">View Products</button>
+              <div class="product-image img-imf"></div>
+              <div class="col-sm-12 product-title">Imperium Finance<br>(For Service Providers)</div>
+              <div class="col-sm-12 product-desc">
+                  We understand that the business of providing innovative Energy solutions can be quite demanding.
+                <span class="product-desc-more">That’s why we are willing to support you to help your business grow. Financial advisory, funds o.</span>
+                <div class="text-read-more"><span onclick="expandText(this)">Read More</span></div>
+              </div>
+              <button class="button-view-products col-sm-7" onclick="goToSection('contact')">Contact Us</button>
             </div>
           </div>
         </div>
@@ -127,9 +134,10 @@
         <div class="col-sm-4 num-big">36<span>States</span></div>
         <div class="col-sm-4 num-big">100<span>Homes</span></div>
       </div>
-      <div class="col-sm-12 text-learn-more">Learn more about partnerships.</div>
+      <!-- <div class="col-sm-12 text-learn-more">Learn more about partnerships.</div> -->
+      <div class="col-sm-12 btn-learn-more"><span class="text-learn-more">Learn more about partnerships</span> <span class="arrow">&nbsp; &#x2192;</span></div>
     </section>
-    <section id="section-5">
+    <!-- <section id="section-5">
       <div class="small-text col-sm-12">Why Imperium?</div>
       <div class="col-sm-10 col-sm-offset-1">
         <div class="col-md-4 box-section">
@@ -148,10 +156,10 @@
            <div class="desc-text col-sm-12">Our installer partners will fit and test your new system. And we’ll be there every step of the way.</div>
         </div> 
       </div>
-   </section>
-   <div class="row"></div>
-    <section class="big-grey-box row"></section>
-  </div>
+   </section> -->
+   <section id="footer" class="row">
+    
+  </section>
   <script src="js/main.js"></script>
 </body>
 </html>

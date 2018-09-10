@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Renewable Energy</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/calculator.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>$(function () { $('#nav').load('partials/nav.html');});</script>
+  <script>$(function () { $('#overlay').load('partials/nav-mobile.html');});</script>
+  <script>$(function () { $('#footer').load('partials/footer.html');});</script>
+</head>
+<body>
+  <div id = "overlay">
+    
+  </div>
+  <div class="container-fluid">
+    <section id ="hero-section" >
+      <img src="img/blog-bg.png" alt="hero-image" class="row hero-image">
+      <div id="nav" class="row">
+  
+      </div>
+      <div class="row hero-left-margin">
+        <div class="col-md-10 col-md-offset-2 col-sm-offset-1 hero-big-text">Calculator</div>
+        <div class="col-md-6 col-md-offset-2 col-sm-offset-1 hero-small-text">Calculate your Energy Consumption</div>
+        <div class="col-sm-8 col-md-offset-2 col-sm-offset-1">
+          <div class="thin-vertical-line"></div>
+        </div>
+      </div>
+    </section>
+    <section id="calculator-section" class="row">
+      <div class="desc-text">Fill the form to compute how much energy<br>you consume.</div>
+      <div class="input-field-group">
+        <div class="row col-sm-12">Category</div>
+        <div class="dropdown col-xs-12">
+          <select class="row col-xs-12">
+            <option value="IND">Individual</option>
+            <option value="BUS">Buiness</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-field-group">
+        <div class="row col-sm-12">Type</div>
+        <div class="dropdown col-xs-12">
+          <select class="row col-xs-12">
+            <option value="IND">General</option>
+            <option value="BUS">Device Based</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-field-group">
+        <div class="row col-sm-12">Generator Capacity</div>
+        <input class="col-sm-10 col-xs-9">
+        <div class="dropdown dropdown-small">
+          <select class="col-xs-12">
+            <option value="IND">kVA</option>
+            <option value="BUS">kVA</option>
+          </select>
+        </div>
+      </div>
+       <div class="input-field-group">
+        <div class="row col-sm-12">Generator On-Time</div>
+        <input class="col-sm-10 col-xs-9">
+        <div class="dropdown dropdown-small">
+          <select class="col-xs-12">
+            <option value="IND">Hrs</option>
+            <option value="BUS">mins</option>
+          </select>
+        </div>
+      </div>
+       <div class="input-field-group">
+        <div class="row col-sm-12">Cost of Fueling</div>
+        <div class="dropdown col-xs-12">
+          <select class="row col-xs-12">
+            <option value="IND">₦ 100,000</option>
+            <option value="BUS">₦ 30,000</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-calculate col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3" onclick="goToSection('calculator-result')">Calculate</button>
+    </section>
+    <section id="footer" class="row">
+     
+    </section>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

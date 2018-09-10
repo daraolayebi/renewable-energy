@@ -7,20 +7,20 @@ bgImageArray.forEach(function(img){
     // caches images, avoiding white flash between background replacements
 });
 
-function backgroundSequence() {
-	window.clearTimeout();
-	var k = 0;
-	for (i = 0; i < bgImageArray.length; i++) {
-		setTimeout(function(){ 
-            document.getElementById("hero-image").Image.src = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
-			// document.documentElement.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
-			// document.documentElement.style.backgroundSize ="cover";
-		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
-		}, (secs * 1000) * i)	
-	}
-}
+// function backgroundSequence() {
+// 	window.clearTimeout();
+// 	var k = 0;
+// 	for (i = 0; i < bgImageArray.length; i++) {
+// 		setTimeout(function(){ 
+//             document.getElementById("hero-image").Image.src = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
+// 			// document.documentElement.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
+// 			// document.documentElement.style.backgroundSize ="cover";
+// 		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
+// 		}, (secs * 1000) * i)	
+// 	}
+// }
 
-backgroundSequence();
+// backgroundSequence();
 
 
 function goToSection(section){
@@ -47,6 +47,21 @@ function goToSection(section){
     }
     else if(section == "profile-edit"){
         window.location.href = "vendor-profile-edit.html";
+    }
+    else if(section == "contact"){
+        window.location.href = "contact.html";
+    }
+    else if(section == "about"){
+        window.location.href = "about.html";
+    }
+    else if(section == "faqs"){
+        window.location.href = "faqs.html";
+    }
+    else if(section == "calculator"){
+        window.location.href = "calculator.html";
+    }
+    else if(section == "calculator-result"){
+        window.location.href = "calculator-result.html";
     }
 }
 
@@ -109,4 +124,21 @@ function showForm(id){
     $('.underline').css('display', 'none');
     document.getElementsByClassName('underline').item(id).style.display = "block";
 
+}
+
+function toggleAnswer(x){
+    $(x).siblings().toggle();
+}
+
+
+
+function expandText(x){
+    $(x).parent().siblings().toggle();
+
+    if ($(x).parent().siblings().is(':visible') ){
+        $(x).html("Read Less");
+    }
+    else{
+        $(x).html("Read More");
+    }
 }

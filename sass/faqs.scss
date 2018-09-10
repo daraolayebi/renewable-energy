@@ -106,21 +106,23 @@ body{
 .faq-left-section{
     float: left;
     width: 50%;
-    height: 100px;
+    // height: 100px;
     // background: red;
 
     .question-box{
         float: left;
+        margin-bottom: 20px;
     }
 }
 
 .faq-right-section{
-    float: left;
+    float: right;
     width: 50%;
-    height: 100px;
+    // height: 100px;
 
     .question-box{
         float: right;
+        margin-bottom: 20px;
     }
 
 }
@@ -130,5 +132,25 @@ body{
     font-size: 17px;
     font-weight: 300;
     color: #6e6e6e;
+    display: none;
 }
 
+.faq-clickable-section{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 720px){
+    .faq-left-section{
+        width: 100%;
+    }
+
+    .faq-right-section{
+        width: 100%;
+        
+        .question-box{
+            float: left;
+        }
+    }
+
+}
