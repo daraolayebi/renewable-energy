@@ -137,8 +137,51 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     margin-top: 100px; }
   #calculator-result-section .margin-top-50 {
     margin-top: 50px; }
-  #calculator-result-section .margin-top-70 {
-    margin-top: 70px; }
+  #calculator-result-section .margin-top-80 {
+    margin-top: 80px; }
+
+.renewable-product-options {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 50px; }
+  .renewable-product-options .product-option {
+    float: left;
+    width: 30%; }
+    .renewable-product-options .product-option .border-outline {
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+      background-color: #ffffff;
+      border: solid 1px rgba(151, 151, 151, 0.5);
+      padding-bottom: 60px;
+      padding-top: 60px; }
+  .renewable-product-options .product-center {
+    margin-left: 5%; }
+  .renewable-product-options .product-right {
+    float: right; }
+  .renewable-product-options .product-img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 200px; }
+  .renewable-product-options .product-name {
+    color: #1f1f1fea;
+    font-size: 18px;
+    padding-left: 0px;
+    margin-top: 10px; }
+  .renewable-product-options .product-price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #7e7e7e;
+    font-size: 16px;
+    padding-left: 0px; }
+  .renewable-product-options .product-rating {
+    padding-left: 0px;
+    color: #f5a623; }
+    .renewable-product-options .product-rating i {
+      margin-right: 3px; }
+    .renewable-product-options .product-rating .color-grey {
+      color: rgba(155, 155, 155, 0.4); }
 
 .product-group {
   width: 42%;
@@ -214,7 +257,14 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
   #calculator-result-section .product-group {
     width: 80%;
-    margin-left: 10%; } }
+    margin-left: 10%; }
+
+  .renewable-product-options {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px; }
+    .renewable-product-options .product-name {
+      font-size: 17px; } }
 @media screen and (max-width: 800px) {
   #calculator-section {
     width: 76%;
@@ -231,7 +281,20 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     width: 60%;
     float: left;
     margin-bottom: 20px;
-    margin-left: 20%; } }
+    margin-left: 20%; }
+
+  .renewable-product-options {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 50px; }
+    .renewable-product-options .product-option {
+      width: 60%;
+      margin-left: 20%;
+      margin-bottom: 50px; }
+    .renewable-product-options .product-right {
+      float: left; }
+    .renewable-product-options .product-name {
+      font-size: 18px; } }
 @media screen and (max-width: 500px) {
   #calculator-section {
     width: 100%;
@@ -249,7 +312,15 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     width: 100%;
     float: left;
     margin-bottom: 20px;
-    margin-left: 0%; } }
+    margin-left: 0%; }
+
+  .renewable-product-options {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 50px; }
+    .renewable-product-options .product-option {
+      width: 80%;
+      margin-left: 10%; } }
 @media screen and (max-width: 460px) {
   #calculator-result-section .product-group {
     width: 100%;
