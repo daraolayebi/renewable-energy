@@ -63,6 +63,9 @@ function goToSection(section){
     else if(section == "calculator-result"){
         window.location.href = "calculator-result.html";
     }
+    else if(section == "products"){
+        window.location.href = "products.html";
+    }
 }
 
 var menuIcon = null;
@@ -141,4 +144,16 @@ function expandText(x){
     else{
         $(x).html("Read More");
     }
+}
+
+function toggleConsumptionType(x){
+    if(x.selectedIndex == 0){
+        $('.box-add-device').css('display', 'none');
+        $('#device-list').css('display', 'none');
+    }
+    else{
+        $('.box-add-device').css('display', 'block');
+        $('#device-list').css('display', 'block');
+    }
+   
 }

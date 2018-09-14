@@ -20,19 +20,110 @@ button:focus {
   outline: none; }
 
 #hero-section {
-  width: 100%;
-  height: 710px;
-  color: white; }
+  height: 700px; }
   #hero-section .hero-image {
-    position: absolute;
-    width: 100%;
-    height: 710px;
-    object-fit: cover;
-    object-position: center; }
+    height: 700px; }
 
 .hero-small-text {
+  margin-top: 21px;
+  display: inline-block;
+  font-size: 30px;
   padding-left: 0px;
-  font-size: 29px;
-  margin-top: 30px; }
+  margin-bottom: 60px; }
+
+#energy-products-section {
+  padding-top: 171px; }
+  #energy-products-section .product-count {
+    text-align: center;
+    color: #292929;
+    font-size: 16px;
+    margin-bottom: 51px; }
+  #energy-products-section .product-view-count {
+    color: #292929;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 26px;
+    margin-top: 30px; }
+  #energy-products-section .button-show-more {
+    height: 47px;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 500;
+    border: solid 1px #36434b;
+    background: none;
+    margin-bottom: 170px; }
+
+.products-group {
+  width: 80%;
+  margin-left: 10%; }
+  .products-group .product-option {
+    float: left;
+    width: 25%;
+    margin-bottom: 52px; }
+    .products-group .product-option .border-outline {
+      cursor: pointer;
+      width: 90%;
+      border-radius: 5px;
+      background-color: #ffffff;
+      border: solid 1px rgba(151, 151, 151, 0.5);
+      padding-bottom: 60px;
+      padding-top: 60px; }
+  .products-group .product-img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 200px; }
+  .products-group .product-name {
+    color: #1f1f1fea;
+    font-size: 18px;
+    padding-left: 0px;
+    margin-top: 10px; }
+  .products-group .product-price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #7e7e7e;
+    font-size: 16px;
+    padding-left: 0px; }
+  .products-group .product-rating {
+    padding-left: 0px;
+    color: #f5a623; }
+    .products-group .product-rating i {
+      margin-right: 3px; }
+    .products-group .product-rating .color-grey {
+      color: rgba(155, 155, 155, 0.4); }
+
+@media screen and (max-width: 1024px) {
+  .products-group {
+    width: 90%;
+    margin-left: 5%; }
+    .products-group .product-option {
+      width: 33.3333333333%; } }
+@media screen and (max-width: 760px) {
+  .products-group {
+    width: 95%;
+    margin-left: 2.5%; }
+    .products-group .product-option {
+      width: 50%; } }
+@media screen and (max-width: 520px) {
+  .hero-small-text {
+    font-size: 22px;
+    margin-bottom: 50px; }
+
+  .vendor-box .vendor-details {
+    width: 100%; }
+    .vendor-box .vendor-details .vendor-img {
+      width: 100%; }
+
+  .products-group {
+    width: 80%;
+    margin-left: 10%; }
+    .products-group .product-option {
+      width: 100%; } }
+@media screen and (max-width: 480px) {
+  .products-group {
+    width: 95%;
+    margin-left: 7%; }
+    .products-group .product-option {
+      width: 100%; } }
 
 /*# sourceMappingURL=products.css.map */

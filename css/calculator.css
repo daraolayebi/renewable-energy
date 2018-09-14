@@ -28,7 +28,7 @@ body {
   padding-top: 119px;
   width: 28%;
   margin-left: 36%;
-  padding-bottom: 290px; }
+  padding-bottom: 190px; }
   #calculator-section .desc-text {
     text-align: center;
     color: #64842c;
@@ -96,6 +96,21 @@ select:focus {
 
 .dropdown-small:after {
   left: 75%; }
+
+.width-20 {
+  width: 19%; }
+
+.width-80 {
+  width: 80%; }
+
+.button-add-device {
+  margin-top: 32px;
+  height: 31px;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: #748827;
+  border: solid 1px #d6d6d6; }
 
 input {
   margin-top: 10px;
@@ -226,6 +241,41 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
         margin-left: 10px;
         font-size: 12px; }
 
+#device-list {
+  margin-top: 30px;
+  width: 100%;
+  background: #000000;
+  display: none; }
+  #device-list .device {
+    float: left;
+    width: 49%;
+    border-radius: 5px;
+    border: solid 1px #64842c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #6e6e6e;
+    font-size: 14px;
+    margin-top: 10px; }
+  #device-list .device-right {
+    float: right; }
+
+.box-add-device {
+  margin-top: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-radius: 10px;
+  background-color: rgba(216, 216, 216, 0.48);
+  display: none; }
+  .box-add-device .box-content {
+    width: 90%;
+    margin-left: 5%;
+    color: #313131;
+    font-size: 14px; }
+    .box-add-device .box-content .text-field-label {
+      padding-left: 0px;
+      margin-top: 20px; }
+
 @media screen and (max-width: 1450px) {
   #calculator-section {
     width: 32%;
@@ -320,7 +370,16 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     margin-top: 50px; }
     .renewable-product-options .product-option {
       width: 80%;
-      margin-left: 10%; } }
+      margin-left: 10%; }
+
+  .width-20 {
+    width: 28%; }
+
+  .width-80 {
+    width: 69%; }
+
+  #device-list .device {
+    font-size: 12px; } }
 @media screen and (max-width: 460px) {
   #calculator-result-section .product-group {
     width: 100%;

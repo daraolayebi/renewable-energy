@@ -648,6 +648,24 @@ button:focus{
     .footer-column{
         margin-bottom: 40px;
     }
+
+    .social-links{
+        margin-top: 10px;
+        font-size: 18px;
+
+        a{
+            cursor: pointer;
+            margin-right: 11px;
+            // color:  #c9e00c;
+            color: white;
+            transition: 0.3s;
+        }
+
+        a:hover{
+            color:  #c9e00c;
+            transition: 0.3s;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px){

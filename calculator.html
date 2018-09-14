@@ -46,9 +46,9 @@
       <div class="input-field-group">
         <div class="row col-sm-12">Type</div>
         <div class="dropdown col-xs-12">
-          <select class="row col-xs-12">
-            <option value="IND">General</option>
-            <option value="BUS">Device Based</option>
+          <select class="row col-xs-12" onchange="toggleConsumptionType(this)">
+            <option value="GENERAL">General</option>
+            <option value="DEVICE-BASED">Device Based</option>
           </select>
         </div>
       </div>
@@ -74,11 +74,38 @@
       </div>
        <div class="input-field-group">
         <div class="row col-sm-12">Cost of Fueling</div>
-        <div class="dropdown col-xs-12">
-          <select class="row col-xs-12">
-            <option value="IND">₦ 100,000</option>
-            <option value="BUS">₦ 30,000</option>
-          </select>
+        <input class="col-xs-12">
+      </div>
+      <div class="row col-xs-12"></div>
+      <div id="device-list">
+        <div class="device">1 Pressing Iron, 2hrs on-time</div>
+        <div class="device device-right">1 Pressing Iron, 2hrs on-time</div>
+        <div class="device">1 Pressing Iron, 2hrs on-time</div>
+        <div class="device device-right">1 Pressing Iron, 2hrs on-time</div>
+        <div class="device">1 Pressing Iron, 2hrs on-time</div>
+        <div class="device device-right">2 Compurters, 2hrs on-time</div>
+      </div>
+      <div class="row"></div>
+      <div class="box-add-device col-xs-12">
+        <div class="box-content">
+          <div class="col-sm-12 text-field-label">Device</div>
+          <div class="dropdown col-xs-12">
+              <select class="row col-xs-12">
+                <option value="IND">Light Bulb</option>
+                <option value="BUS">Electric Cooker</option>
+              </select>
+          </div>
+          <div class="col-xs-12 text-field-label">Number of Devices</div>
+          <input class="col-xs-12">
+          <div class="col-xs-12 text-field-label">Device On-Time</div>
+          <input class="width-80">
+          <div class="dropdown dropdown-small width-20">
+           <select class="col-xs-12">
+             <option value="HRS">Hrs</option>
+             <option value="MINS">mins</option>
+           </select>
+          </div>
+          <Button class="button-add-device col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">Add Device</Button>
         </div>
       </div>
       <button class="btn-calculate col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3" onclick="goToSection('calculator-result')">Calculate</button>
