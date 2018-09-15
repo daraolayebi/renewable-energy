@@ -78,34 +78,34 @@
       </div>
       <div class="row col-xs-12"></div>
       <div id="device-list">
-        <div class="device">1 Pressing Iron, 2hrs on-time</div>
+        <!-- <div class="device">1 Pressing Iron, 2hrs on-time</div>
         <div class="device device-right">1 Pressing Iron, 2hrs on-time</div>
         <div class="device">1 Pressing Iron, 2hrs on-time</div>
         <div class="device device-right">1 Pressing Iron, 2hrs on-time</div>
         <div class="device">1 Pressing Iron, 2hrs on-time</div>
-        <div class="device device-right">2 Compurters, 2hrs on-time</div>
+        <div class="device device-right">2 Compurters, 2hrs on-time</div> -->
       </div>
       <div class="row"></div>
       <div class="box-add-device col-xs-12">
         <div class="box-content">
           <div class="col-sm-12 text-field-label">Device</div>
           <div class="dropdown col-xs-12">
-              <select class="row col-xs-12">
+              <select id="device-type" class="row col-xs-12">
                 <option value="IND">Light Bulb</option>
                 <option value="BUS">Electric Cooker</option>
               </select>
           </div>
           <div class="col-xs-12 text-field-label">Number of Devices</div>
-          <input class="col-xs-12">
+          <input type="number" id="device-count" class="col-xs-12">
           <div class="col-xs-12 text-field-label">Device On-Time</div>
-          <input class="width-80">
+          <input type="number" id="device-on-time" class="width-80">
           <div class="dropdown dropdown-small width-20">
-           <select class="col-xs-12">
+           <select  id="time-measure" class="col-xs-12">
              <option value="HRS">Hrs</option>
              <option value="MINS">mins</option>
            </select>
           </div>
-          <Button class="button-add-device col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">Add Device</Button>
+          <Button class="button-add-device col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3" onclick="addDevice()">Add Device</Button>
         </div>
       </div>
       <button class="btn-calculate col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3" onclick="goToSection('calculator-result')">Calculate</button>

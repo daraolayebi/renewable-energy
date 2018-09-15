@@ -101,7 +101,8 @@ select:focus {
   width: 19%; }
 
 .width-80 {
-  width: 80%; }
+  width: 80%;
+  padding-left: 15px; }
 
 .button-add-device {
   margin-top: 32px;

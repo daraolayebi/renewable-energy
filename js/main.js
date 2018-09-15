@@ -131,6 +131,14 @@ function showForm(id){
 
 function toggleAnswer(x){
     $(x).siblings().toggle();
+
+    if($(x).siblings().is( ":visible" )){
+        $(x).children().find('i').removeClass('fa-plus-circle').addClass('fa-minus-circle');
+    }
+    else{
+        $(x).children().find('i').removeClass('fa-minus-circle').addClass('fa-plus-circle');
+    }
+   
 }
 
 
@@ -155,5 +163,39 @@ function toggleConsumptionType(x){
         $('.box-add-device').css('display', 'block');
         $('#device-list').css('display', 'block');
     }
+   
+}
+
+
+function addDevice(){
+    var count = $("#device-list").children().length;
+
+    var _class = "device";
+
+    var deviceType = document.getElementById('device-type');
+    var deviceCount = document.getElementById('device-count');
+    var deviceOnTime = document.getElementById('device-on-time');
+    var deviceTimeMeasure = document.getElementById('time-measure');
+
+    if(deviceCount.value == ""){
+        deviceCount.value = 0;
+    }
+
+    if(deviceOnTime.value == ""){
+        deviceOnTime.value = 0;
+    }
+
+    var s = deviceCount.value+" "+deviceType[deviceType.selectedIndex].text+", "+deviceOnTime.value+deviceTimeMeasure[deviceTimeMeasure.selectedIndex].text+" on-time";
+    
+    var addedDevice = "<div id = device_"+count+" class ="+_class+">"+s+"</div>" 
+
+    $( "#device-list" ).append( addedDevice );
+
+    if( count % 2 != 0){
+        $("#device_"+count).css('float', 'right');
+    }
+
+    deviceCount.value = "";
+    deviceOnTime.value = "";
    
 }
